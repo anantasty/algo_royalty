@@ -1,2 +1,24 @@
-# algo_royalty
-Algorand smart contract to collect Royalty
+# Algorand Royalty Smart Contract
+This contract is deployed alongside and Algorand Standard Asset(ASA) which is to be sold as and NFT to collect royalty from subsequent sales of the ASA.
+
+# Algorand ASA's as NFT's
+An angorand ASA with the total parameter of 1 and decimal parameter of 0.
+
+# Royalty for NFT Sales
+Royalty is a really big reason to sell your creative work digitally over a Blockchain. Using smart contracts is a way to ensure that creators get their royalty on subsequent sales of their work in a guaranteed manner.
+
+# Sale Flow
+- Seller sets up the NFT for sale on our App which is a stateful smart contract.
+- Buyer pays the specified amount to the the App. (Note: not directly to the seller)
+- On recipt of the payment the NFT is transfered to the buyer
+- The App remits the sale amount minus the royalty fee to the seller. 
+- The royalty is collected on the App an can be redeamed by the creator at any time.
+
+# PyTEAL
+This contract is written in PyTEAL which is one of the supported languages to write TEAL smart contracts.
+
+# Dev environment
+- We assume you have an [algorand node](https://developer.algorand.org/docs/run-a-node/setup/install/) running or the [algorand sandbox](https://github.com/algorand/sandbox).
+- [PyTEAL installed](https://pyteal.readthedocs.io/en/stable/installation.html)
+
+
